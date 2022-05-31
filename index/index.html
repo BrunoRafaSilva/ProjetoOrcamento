@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelador de orçamentos</title>
+    <script typeof="text/javascript" src="back.js"></script>
+    <link rel="stylesheet" href="visual.css">
+</head>
+<header>
+    <h1>Modelador de orçamentos</h1>
+</header>
+
+<body>
+
+    <div id="Formulario">
+        <form>
+            <!--FORMULÁRIO-->
+            <div class="form-group">
+                <label for="txtItem">Item</label>
+                <input type="text" class="form-control1" id="txtItem" placeholder="Item">
+            </div>
+            <div class="second-line">
+                <label for="txtDesc">Descrição:</label>
+                <input type="text" class="form-control" id="txtDesc" placeholder="Descrição">
+            </div>
+            <div class="form-group">
+                    <label for="txtQuantidade">Quantidade:</label>
+                    <input type="number" class="form-control" id="txtQuantidade" placeholder="Quantidade">
+            </div>
+            <div class="form-group">
+                    <label for="txtValor">Valor</label>
+                    <input type="number" class="form-control" id="txtValor" placeholder="Valor">
+            </div>
+            <!--BOTÕES-->
+            <div class="buttons">
+            <button type="button" class="btn btn-primary btn-lg"
+                onclick="inserir(txtItem.value, txtDesc.value, txtQuantidade.value, txtValor.value)">
+                Inserir
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="delRegistro()">
+                Excluir
+            </button>
+            </div>
+        </form>
+    </div>
+    <table id="tabela" class="table table-striped">
+        <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Valor</th>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
