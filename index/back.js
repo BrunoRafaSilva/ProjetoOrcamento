@@ -35,6 +35,7 @@ function preencheCamposForm() {
 }
 
 function delRegistro() {
+    
 
     for (var i = 0; i < pessoas.rows.length; i++) {
         if (index == i) {
