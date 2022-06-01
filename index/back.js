@@ -1,9 +1,9 @@
-let pessoas, index;
+let tabela, index;
 
 function inserir(item,descricao,quantidade,valor) {
-    pessoas = document.getElementById("tabela");
-    var qtdlLinhas = pessoas.rows.length;
-    var linha = pessoas.insertRow(qtdlLinhas);
+    tabela = document.getElementById("tabela");
+    var qtdlLinhas = tabela.rows.length;
+    var linha = tabela.insertRow(qtdlLinhas);
     var linhaParam;
     
 
@@ -23,13 +23,13 @@ function inserir(item,descricao,quantidade,valor) {
 
 function preencheCamposForm() {
 
-    for (var i = 0; i < pessoas.rows.length; i++) {
-        pessoas.rows[i].onclick = function () {
+    for (var i = 0; i < tabela.rows.length; i++) {
+        tabela.rows[i].onclick = function () {
             index = this.rowIndex;
-            document.getElementById("txtItem").value = pessoas.rows[index].cells[0].innerText;
-            document.getElementById("txtDesc").value = pessoas.rows[index].cells[1].innerText;
-            document.getElementById("txtQuantidade").value = pessoas.rows[index].cells[2].innerText;
-            document.getElementById("txtValor").value = pessoas.rows[index].cells[3].innerText;
+            document.getElementById("txtItem").value = tabela.rows[index].cells[0].innerText;
+            document.getElementById("txtDesc").value = tabela.rows[index].cells[1].innerText;
+            document.getElementById("txtQuantidade").value = tabela.rows[index].cells[2].innerText;
+            document.getElementById("txtValor").value = tabela.rows[index].cells[3].innerText;
         }
     }
 }
@@ -37,10 +37,13 @@ function preencheCamposForm() {
 function delRegistro() {
     
 
-    for (var i = 0; i < pessoas.rows.length; i++) {
+    for (var i = 0; i < tabela.rows.length; i++) {
         if (index == i) {
-            pessoas.deleteRow(index);
+            tabela.deleteRow(index);
             return;
         }
     }
 }
+
+
+// DAQUI PRA BAIXO É CÓDIGO TESTE
