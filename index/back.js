@@ -1,11 +1,11 @@
 let tabela, index;
 
-function inserir(item,descricao,quantidade,valor) {
+function inserir(item, descricao, quantidade, valor) {
     tabela = document.getElementById("tabela");
     var qtdlLinhas = tabela.rows.length;
     var linha = tabela.insertRow(qtdlLinhas);
     var linhaParam;
-    
+
 
     var cellItem = linha.insertCell(0);
     var cellDesc = linha.insertCell(1);
@@ -35,7 +35,7 @@ function preencheCamposForm() {
 }
 
 function delRegistro() {
-    
+
 
     for (var i = 0; i < tabela.rows.length; i++) {
         if (index == i) {
@@ -47,3 +47,4 @@ function delRegistro() {
 
 
 // DAQUI PRA BAIXO É CÓDIGO TESTE
+

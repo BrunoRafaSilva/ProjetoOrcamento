@@ -19,7 +19,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: ;
+  border-radius: 5px;
 }
 
 form {
@@ -71,12 +71,12 @@ label {
   width: 300px;
 }
 
-#tabela thead th{
+#tabela thead th {
   font-weight: bold;
   background-color: black;
-  color:white;
-  
-  padding:5px 10px;
+  color: white;
+
+  padding: 5px 10px;
 }
 
 /*DAQUI PRA BAIXO É TESTE*/
